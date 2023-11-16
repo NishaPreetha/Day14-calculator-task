@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Phudu', cursive;
+}
+
+.Head {
+    text-align: center;
+    color: rgba(28, 163, 241, 0.947);
+}
+
+.parent-head {
+    margin-bottom: 1.5rem;
+    height: 10%;
+}
+
+.parent-calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(35deg, #0a0a00d2, #3a443a); */
+}
+
+.calculator {
+    height: 90%;
+    width: 28%;
+    border: 1px solid #f8f8f8;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+.calculator>div {
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.input-box {
+    width: 95%;
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(28, 163, 241, 0.947);
+    text-align: right;
+}
+
+.input-box::placeholder {
+    color: white;
+}
+
+.button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 20px;
+    color: rgb(16, 19, 19);
+    box-shadow: 1px 1px 5px rgba(113, 115, 119, 0.5);
+    cursor: pointer;
+}
+
+.operator {
+    color: rgba(104, 235, 11, 0.929);
+    background-color: grey;
+}
+
+.equalTo {
+    background-color: orange;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .calculator {
+        max-width: 300px;
+    }
+}
